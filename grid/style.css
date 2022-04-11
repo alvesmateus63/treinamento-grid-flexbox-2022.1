@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  Propriedades de Container
+*/
+
+.container {
+  width: 1000px;
+  height: 100vh;
+  margin: auto;
+  background-color: #dcdcdc;
+
+  /** Define o display como grid */
+  /* display: grid; */ 
+  /** Define a quantidade de colunas */
+  /* grid-template-columns: repeat(3, 1fr) ; */
+  /** Define a quantidade de linhas */
+  /* grid-template-rows: repeat(3, 1fr);   */
+
+  /** Define espaçamento entre linhas */
+  /* row-gap: 10px; */
+  /** Define espaçamento entre colunas */ 
+  /* column-gap: 10px;  */
+
+  /** Alinha os itens ao longo da coluna */
+  /* align-items: center; */
+  /** Alinha os itens ao longo da linha */  
+  /* justify-items: center;  */
+  /** Atalho para os dois acima */
+  /* place-items: <align-items> <justify-itens>; */ 
+
+  /** Caso o grid seja menor que o container - vertical */
+  /* align-content: center;  */
+  /** Caso o grid seja menor que o container - horizontal */
+  /* justify-content: center; */
+  /** Atalho para os dois acima */ 
+  /* place-content: <align-items> <justify-itens>; */ 
+}
+
+
+/* .children {
+  width: 100%;
+  height: 100%;
+  background-color: aqua;
+  font-size: 24pt;  
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+} */
+
+/*
+  Propriedades de elementos filhos
+*/
+
+/* Todo: grid-column-start/end */
+/* Todo: grid-row-start/end */
+/* Todo: align-self, justify-self, place-self */
+
+/*
+  GRID ÀREA
+*/
+
+/* #page {
+  display: grid;
+  width: 100%;
+  height: 250px;
+  grid-template-areas: "head head"
+                       "nav main"
+                       "nav foot";
+  grid-template-rows: 50px 1fr 30px;
+  grid-template-columns: 150px 1fr;
+}
+
+#page > header {
+  grid-area: head;
+  background-color: #8ca0ff;
+}
+
+#page > nav {
+  grid-area: nav;
+  background-color: #ffa08c;
+}
+
+#page > main {
+  grid-area: main;
+  background-color: #ffff64;
+}
+
+#page > footer {
+  grid-area: foot;
+  background-color: #8cffa0;
+} */

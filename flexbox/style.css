@@ -1,0 +1,100 @@
+/*
+    Cores e tamanhos
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fcfcfc;
+}
+
+.container {
+    width: 1000px;
+    height: 100vh;
+    margin: auto;
+    background-color: #dcdcdc;
+}
+
+.div-med {
+    width: 100px;
+    height: 100px;
+    font-size: 30pt;
+    text-align: center;
+    line-height: 100px;
+    color: #fff;
+}
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.brown {
+    background-color: brown;
+}
+
+/*
+    Propriedades de Container
+*/
+
+.container {
+    /** "Ativa o flexbox" */
+    /* display: flex; */
+    /** Comportamento do eixo principal */ 
+    /* flex-direction: row; */
+    /** Define se existe quebra de linha */ 
+    /* flex-wrap: nowrap; */
+    /* justify-content: center; */
+    /** Define o alinhamento vertical */ 
+    /* align-items: center; */
+    /** Define o alinhamento vertical caso tenha duas ou mais linhas */ 
+    /* align-content: center;  */
+    /** Define o espaçamento entre os elementos filhos */
+    /* gap: 10px;  */
+}
+
+
+/*
+    Propriedades de Elementos filhos
+*/
+
+.red {
+    /** Altera a ordem padrão */
+    /* order: 0;  */
+    /** Define um tamanho padrão para o item antes que seja divido */
+    /* flex-basis: auto;  */
+    /** Impede o item de diminuir mais que o flex-basis */
+    /* flex-shrink: 1;  */
+    /** Permite que o item cresça (se tiver espaço) */
+    /* flex-grow: 0;  */
+    /** Atalho para os três comandos acima */
+    /*flex: <grow> <shrink> <basis>;*/ 
+    /** Altera o comportamento de alinhamento apenas nesse item */
+    /* align-self: auto;  */
+}
+
+.blue {
+    order: 0; 
+    flex-basis: auto;  
+    flex-grow: 0; 
+    flex-shrink: 0; 
+    /*flex: . . .;*/ 
+    align-self: auto;
+}
+
+.brown {
+    order: 0; 
+    flex-basis: auto;  
+    flex-grow: 0; 
+    flex-shrink: 0; 
+    /*flex: . . .;*/ 
+    align-self: auto;
+}
+
